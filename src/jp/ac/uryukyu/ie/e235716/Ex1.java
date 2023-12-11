@@ -1,14 +1,10 @@
 package jp.ac.uryukyu.ie.e235716;
 
-public class Ex1{
+public class Ex1 {
     public static void main(String[] args) {
-        String str = null;
+        String str = "壱百満";
 
-        try {
-            int length = str.length();
-            System.out.println("String length: " + length);
-        } catch(NullPointerException e) {
-            System.out.println("NullPointerException caught: " + e.getMessage());
-        }  
+        int value = Integer.parseInt(str);
+        System.out.println("Parsed value: " + value);
     }
 }
