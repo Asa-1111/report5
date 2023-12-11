@@ -4,9 +4,11 @@ public class Ex1{
     public static void main(String[] args) {
         String str = null;
 
-        
-        int length = str.length();
-        System.out.println("String length: " + length);
-         
+        try {
+            int length = str.length();
+            System.out.println("String length: " + length);
+        } catch(NullPointerException e) {
+            System.out.println("NullPointerException caught: " + e.getMessage());
+        }  
     }
 }
